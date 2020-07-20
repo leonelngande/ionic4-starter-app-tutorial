@@ -9,33 +9,33 @@ export class ItemService {
   items: Array<Item> = [
     {
       id: 1,
-      title: 'Example 1',
+      title: 'Item 1',
       description: 'description 1',
-      image: '/assets/shapes.svg',
+      image: 'assets/shapes.svg',
     },
     {
       id: 2,
-      title: 'Example 2',
+      title: 'Item 2',
       description: 'description 2',
-      image: '/assets/shapes.svg',
+      image: 'assets/shapes.svg',
     },
     {
       id: 3,
-      title: 'Example 3',
+      title: 'Item 3',
       description: 'description 3',
-      image: '/assets/shapes.svg',
+      image: 'assets/shapes.svg',
     },
     {
       id: 4,
-      title: 'Example 4',
+      title: 'Item 4',
       description: 'description 4',
-      image: '/assets/shapes.svg',
+      image: 'assets/shapes.svg',
     },
     {
       id: 5,
-      title: 'Need a more complex app?',
-      description: 'Let\'s talk!',
-      image: '/assets/shapes.svg',
+      title: 'Item 5',
+      description: 'Last list item, description 5',
+      image: 'assets/shapes.svg',
     }
   ];
 

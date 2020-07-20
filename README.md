@@ -3,6 +3,8 @@
 ### About this repo
 This repo is a demo application demonstrating swipe navigation between pages in Ionic 4.
 
+You can find it's associated blog post at ....
+
 ### Install this app
 ```
 npm install
@@ -13,5 +15,5 @@ npm install
 ionic serve
 ```
 ### Demo
-
+[https://leonelngande.github.io/ionic4-swipe-navigation-between-pages/](https://leonelngande.github.io/ionic4-swipe-navigation-between-pages/)
 

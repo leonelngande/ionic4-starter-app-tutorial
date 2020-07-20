@@ -2,8 +2,8 @@
   <ion-toolbar color="primary">
     <ion-title>Home</ion-title>
     <ion-buttons slot="end">
-      <ion-button [routerLink]="['https://twitter.com/leonelngande']" target="blank">
-        <ion-icon slot="icon-only" name="logo-twitter"></ion-icon>
+      <ion-button (click)="visitRepo()">
+        <ion-icon slot="icon-only" name="logo-github"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -12,6 +12,8 @@
 <ion-content padding>
 
   <ion-list>
+
+    <ion-list-header>List Items</ion-list-header>
 
     <ion-item *ngFor="let item of items" [routerLink]="['/items', item.id]" detail>
       <ion-avatar slot="start">

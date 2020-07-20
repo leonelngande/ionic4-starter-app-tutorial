@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { ItemService } from '../../services/item.service';
+import {Component, Inject} from '@angular/core';
+import {ItemService} from '../../services/item.service';
 import {Item} from '../../models/item.model';
+import {DOCUMENT} from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -12,10 +12,14 @@ export class HomePage {
 
   items: Array<Item>;
 
-  constructor(public itemService: ItemService) {
-
+  constructor(
+      public itemService: ItemService,
+      @Inject(DOCUMENT) private document: Document,
+  ) {
     this.items = this.itemService.getItems();
-
   }
 
+    visitRepo() {
+      this.document.location.href = 'https://github.com/leonelngande/ionic4-swipe-navigation-between-pages';
+    }
 }

@@ -39,7 +39,6 @@ export class ViewItemPage implements OnInit {
 
   onSwipeLeft($event) {
     const previousItem = this.itemService.getPreviousItem(this.item.id);
-    console.log({previousItem, places: this.itemService.getItems()});
     if (previousItem) {
       this.navCtrl.navigateBack(['/', 'items', previousItem.id]);
     } else {
@@ -50,7 +49,6 @@ export class ViewItemPage implements OnInit {
 
   onSwipeRight($event) {
     const nextItem = this.itemService.getNextItem(this.item.id);
-    console.log({nextItem, places: this.itemService.getItems()});
     if (nextItem) {
       this.navCtrl.navigateForward(['/', 'items', nextItem.id]);
     }
