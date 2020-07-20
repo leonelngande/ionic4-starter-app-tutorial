@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{item.title}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content appSwipe (swipeLeft)="onSwipeLeft($event)" (swipeRight)="onSwipeRight($event)">
+  <ion-card>
+    <img [src]="item.image" [alt]="item.title"/>
+    <ion-card-header>
+      <ion-card-title>{{item.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{item.description}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
