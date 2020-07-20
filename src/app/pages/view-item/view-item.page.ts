@@ -5,7 +5,7 @@ import {NavController} from '@ionic/angular';
 import {Item} from '../../models/item.model';
 
 @Component({
-  selector: 'app-update-item',
+  selector: 'app-view-item',
   templateUrl: './view-item.page.html',
   styleUrls: ['./view-item.page.scss'],
 })
